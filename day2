@@ -1,0 +1,116 @@
+var x;
+var y;
+var sum = ((x + y) * 2);
+
+let x;
+let remainder = (x % 10);
+let total = remainder + x;
+
+// let x;
+// let n;
+// let result = x * n;
+
+// let x;
+// let y;
+// let z;
+// let result = a / (x*y*z)
+// let x = a + 10;
+// let y = a - 10;
+// let z = a % 10;
+
+
+let librarian = {
+    id: 1,
+    available: true,
+    count: 22,
+    name: "dah",
+    author: "oge"
+}
+console.log(librarian);
+
+
+let left_operand = 5;
+let right_operand = 20;
+let operator = "+";
+
+if (operator == "+") {
+    console.log(left_operand + right_operand);
+}else if (operator == "-") {
+    console.log(right_operand - left_operand);
+}else if (left_operand == "*") {
+    console.log(left_operand * right_operand);
+}else if (operator == "/") {
+    console.log(right_operand / left_operand);
+}else {
+    console.log(NaN);
+}
+
+    
+console.log(calc(3)(2));
+
+// function declaration
+function calc(x) {
+    function secondNumber(a) {
+        return a * x;
+    }
+    return secondNumber;
+}
+
+
+// function expression
+// const calc = function(x) {
+//     function secondNumber(a) {
+//         return a * x;
+//     }
+//     return secondNumber
+// };
+
+
+// using arrow function
+// const calc = (x) => {
+//     function secondNumber(a) {
+//         return a * x;
+//     }
+//     return secondNumber
+// };
+
+
+// let result = calc("3")
+// console.log(result("2"))
+
+
+// function as an Argument can be done in two ways
+// this
+function higherOrderFunction(func) {
+    console.log("higher function");
+}
+function lowerOrderFunction() {
+    console.log("lower function");
+}
+
+higherOrderFunction(lowerOrderFunction);
+
+// or this
+function higherOrderFunction(lowerfunction) {
+    console.log("higher function");
+    lowerfunction();
+}
+
+
+higherOrderFunction(function lowerOrderFunction(){
+    console.log("lower order");
+})
+
+// // or using arrow function as
+// const x = () => {
+//     console.log("lower function");
+// }
+
+
+
+function greetings(greet) {
+    return function person(name) {
+        return `Hello, ${name}, ${greet}`;
+    }
+}
+console.log(greetings("Good morning!")("John"));

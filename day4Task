@@ -1,0 +1,22 @@
+let input = [2,6,8];
+hcf = 1;
+
+
+
+for (const index of input) {
+    if (index % input == 0) {
+        hcf = input[index];
+    }
+}
+console.log(hcf)
+
+
+// for (const index = 0; index < input.length; index++) {
+//     if (index % input == 0) {
+//         hcf[index] = input[index];
+//     }
+
+// }
+// console.log(hcf)
+
+

@@ -1,0 +1,22 @@
+let studentScores = [95, 78, 85, 60, 45, 92];
+let arr = [];
+
+
+for (const index of studentScores) {
+    if (studentScores > 90) {
+        arr.push("A");
+    }
+    else if (studentScores > 80) {
+        arr.push("B");
+    }
+    else if (studentScores > 70) {
+        arr.push("C");
+    }
+    else if (studentScores > 60) {
+        arr.push("D");
+    }
+    else if (studentScores < 60) {
+        arr.push("F");
+    }
+}
+let answer = array.map() 
