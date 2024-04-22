@@ -24,7 +24,3 @@ class airCondition {
     }
 }
 module.exports = airCondition;
-
-
-
-}
